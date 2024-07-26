@@ -1,7 +1,7 @@
 export default function appendToEachArrayValue(array, appendString) {
-  for (var idx in array) {
-    var value = array[idx];
-    array[idx] = appendString + value;
+  // get both the index and word with entries
+  for (let [idx, word] of array.entries()) {
+    array[idx] = `${appendString}${word}`;
   }
 
   return array;
