@@ -3,13 +3,16 @@ module.exports = {
     browser: false,
     es6: true,
     jest: true,
-  }, extends: [
+  },
+  extends: [
     'airbnb-base',
     'plugin:jest/recommended',
-  ], globals: {
+  ],
+  globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
-  }, parserOptions: {
+  },
+  parserOptions: {
     ecmaVersion: 2021,
     sourceType: 'module',
   }, plugins: ['jest'],
@@ -18,15 +21,15 @@ module.exports = {
     'no-shadow': 'off',
     'no-underscore-dangle': 'off',
     'no-restricted-syntax': [
-        'error',
-        'LabeledStatement',
-        'WithStatement',
+      'error',
+      'LabeledStatement',
+      'WithStatement',
     ],
   },
   overrides:[
-      {
-        files: ['*.js'],
-        excludedFiles: 'babel.config.js',
-      }
+    {
+      files: ['*.js'],
+      excludedFiles: 'babel.config.js',
+    }
   ]
 };
