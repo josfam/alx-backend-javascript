@@ -53,3 +53,9 @@ Create a function named `createInt8TypedArray` that returns a new `ArrayBuffe
 It should accept three arguments: `length` (Number), `position` (Number), and `value` (Number).
 
 If adding the value is not possible the error `Position outside range` should be thrown.
+
+## 6. Set data structure
+
+Create a function named `setFromArray` that returns a `Set` from an array.
+
+It accepts an argument (Array, of any kind of element).
