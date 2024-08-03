@@ -1,3 +1,4 @@
 export default function hasValuesFromArray(set, array) {
-  return new Set(array).isSubsetOf(set);
+  const arrayAsSet = new Set(array);
+  return arrayAsSet.isSubsetOf(set);
 }
