@@ -73,3 +73,11 @@ Create a function named `cleanSet` that returns a string of all the set values
 It accepts two arguments: a `set` (Set) and a `startString` (String).
 
 When a value starts with `startString` you only append the rest of the string. The string contains all the values of the set separated by `-`.
+
+## 10. More map data structure
+
+Create a function named `updateUniqueItems` that returns an updated map for all items with initial quantity at 1.
+
+It should accept a map as an argument. The map it accepts for argument is similar to the map you create in the previous task.
+
+For each entry of the map where the quantity is 1, update the quantity to 100. If updating the quantity is not possible (argument is not a map) the error `Cannot process` should be thrown.
