@@ -6,20 +6,20 @@ module.exports = {
   },
   extends: [
     'airbnb-base',
-    'plugin:jest/recommended',
+    'plugin:jest/all',
   ],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
   },
   parserOptions: {
-    ecmaVersion: 2021,
+    ecmaVersion: 2018,
     sourceType: 'module',
-  }, plugins: ['jest'],
+  },
+  plugins: ['jest'],
   rules: {
     'no-console': 'off',
     'no-shadow': 'off',
-    'no-underscore-dangle': 'off',
     'no-restricted-syntax': [
       'error',
       'LabeledStatement',
