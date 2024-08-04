@@ -3,6 +3,7 @@ node_modules/
 # test files
 *-main.js
 utils.js
+*.test.js
 
 # editors
 .vscode/
