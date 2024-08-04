@@ -88,7 +88,7 @@ Export a `const` instance of `WeakMap` and name it `weakMap`.
 
 Export a new function named `queryAPI`. It should accept an endpoint argument like so:
 
-```
+```js
   {
     protocol: 'http',
     name: 'getUsers',
