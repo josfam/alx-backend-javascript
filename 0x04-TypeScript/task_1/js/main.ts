@@ -28,12 +28,12 @@ const printTeacher: printTeacherFunction = (firstName: string, lastName: string)
 // 4. Writing a class
 
 // - The constructor interface
-interface StudentClassConstructor {
+export interface StudentClassConstructor {
 	new (firstName: string, lastName: string): StudentClassInterface;
 }
 
 // - The class interface
-interface StudentClassInterface {
+export interface StudentClassInterface {
 	workOnHomework(): string
 	displayName(): string
 }
