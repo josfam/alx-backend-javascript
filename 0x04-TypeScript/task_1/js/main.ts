@@ -26,15 +26,41 @@ const printTeacher: printTeacherFunction = (firstName: string, lastName: string)
 }
 
 // 4. Writing a class
-class StudentClass {
-	constructor(firstName: string, lastName: string) {
 
+// - The constructor interface
+interface StudentClassConstructor {
+	new (firstName: string, lastName: string): StudentClassInterface;
+}
+
+// - The class interface
+interface StudentClassInterface {
+	workOnHomework(): string
+	displayName(): string
+}
+
+// The actual class
+class Student implements StudentClassInterface {
+	firstName: string;
+	lastName: string;
+
+	constructor(firstName: string, lastName: string) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
+	workOnHomework(): string {
+		return 'Currently working';
+	}
+	displayName(): string {
+		return this.firstName;
 	}
 }
 
 
-
 // ==========  TESTING ==========
+
+const student1 = new Student('Jordan', 'Li');
+console.log(student1.workOnHomework());
+console.log(student1.displayName());
 
 const teacher3: Teacher = {
 	firstName: 'John',
