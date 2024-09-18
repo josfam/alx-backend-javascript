@@ -1,5 +1,8 @@
 node_modules/
 
+# nvm configuration files
+.nvmrc
+
 # test files
 *-main*.js
 utils.js
