@@ -53,7 +53,7 @@ app.on('request', (req, res) => {
     const database = process.argv[2];
     if (!database) {
       res.writeHead(500, { 'Content-Type': 'text/plain' });
-      res.end('Cannot load the database');
+      res.end('This is the list of our students\nCannot load the database');
     }
     countStudents(database)
       .then((data) => {
