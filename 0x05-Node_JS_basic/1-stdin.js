@@ -1,4 +1,4 @@
-const readline = require('node:readline');
+const readline = require('readline');
 
 // setup input and output for readline interface
 const rlInterface = readline.Interface({
