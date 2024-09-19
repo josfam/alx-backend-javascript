@@ -10,7 +10,7 @@ const rlInterface = readline.Interface({
 const isInteractive = process.stdin.isTTY;
 
 // welcome question
-console.log('Welcome to Holberton School, what is your name?\n');
+console.log('Welcome to Holberton School, what is your name?');
 
 if (isInteractive) {
   // Ask the user for their name, and print it
