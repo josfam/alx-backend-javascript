@@ -16,7 +16,7 @@ if (isInteractive) {
   // Ask the user for their name, and print it
   rlInterface.question(
     '', (name) => {
-      console.log(`Your name is: ${name}`);
+      process.stdout.write(`Your name is: ${name}\r`);
       rlInterface.close();
     },
   );
@@ -29,7 +29,7 @@ if (isInteractive) {
     input += chunk;
   });
   process.stdin.on('end', () => {
-    console.log(`Your name is: ${input.trim()}`);
+    process.stdout.write(`Your name is: ${input}`);
     rlInterface.close();
   });
 }
