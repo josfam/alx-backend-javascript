@@ -9,6 +9,7 @@
   "author": "Joseph Amukun",
   "license": "MIT",
   "dependencies": {
-    "mocha": "^10.7.3"
+    "mocha": "^10.7.3",
+	"eslint": "^9.10.0"
   }
 }
