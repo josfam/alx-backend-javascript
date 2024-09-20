@@ -15,7 +15,7 @@ describe('round test with types', () => {
   });
 
   it('divides correctly when given DIVIDE type', () => {
-    assert(isNaN(calculateWithType(0.4, 0.4, 'DIVIDE')));
+    assert.strictEqual(calculateWithType(0.4, 0.4, 'DIVIDE'), 'Error');
     assert.strictEqual(calculateWithType(0.5, 0.5, 'DIVIDE'), 1);
     assert.strictEqual(calculateWithType(0.5, 2, 'DIVIDE'), 0.5);
     assert.strictEqual(calculateWithType(6, 2.4, 'DIVIDE'), 3);

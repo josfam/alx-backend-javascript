@@ -4,9 +4,13 @@ function calculateNumber(a, b, type) {
   } else if (type === 'SUBTRACT') {
     return Math.round(a) - Math.round(b);
   } else if (type === 'DIVIDE') {
-    return Math.round(a) / Math.round(b);
+    const result = Math.round(a) / Math.round(b);
+    if (Number.isNaN(result)) {
+      return 'Error'
+    }
+    return result;
   } else {
-    console.log('Not a valid type of operation');
+    return 'Not a valid type of operation';
   }
 }
 
