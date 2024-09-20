@@ -1,19 +1,23 @@
 const assert = require('assert');
 const calculateWithType = require('./1-calcul');
 
-describe('round test with types', () => {
+describe('round test with types for SUM', () => {
   it('adds correctly when given SUM type', () => {
     assert.strictEqual(calculateWithType(0.5, 0.5, 'SUM'), 2);
     assert.strictEqual(calculateWithType(0.5, 3, 'SUM'), 4);
     assert.strictEqual(calculateWithType(6, 2.4, 'SUM'), 8);
   });
+});
 
+describe('round test with types for SUBTRACT', () => {
   it('subtracts correctly when given SUBTRACT type', () => {
     assert.strictEqual(calculateWithType(0.5, 0.5, 'SUBTRACT'), 0);
     assert.strictEqual(calculateWithType(0.5, 3, 'SUBTRACT'), -2);
     assert.strictEqual(calculateWithType(6, 2.4, 'SUBTRACT'), 4);
   });
+});
 
+describe('round test with types for DIVIDE', () => {
   it('divides correctly when given DIVIDE type', () => {
     assert.strictEqual(calculateWithType(0.4, 0.4, 'DIVIDE'), 'Error');
     assert.strictEqual(calculateWithType(0.5, 0.5, 'DIVIDE'), 1);
