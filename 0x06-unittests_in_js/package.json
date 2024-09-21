@@ -6,12 +6,13 @@
   "scripts": {
     "test": "mocha"
   },
-  "author": "Joseph Amukun",
+  "author": "",
   "license": "MIT",
   "dependencies": {
     "mocha": "^10.7.3"
   },
   "devDependencies": {
-    "chai": "^4.2.0"
+    "chai": "^4.2.0",
+    "sinon": "^7.5.0"
   }
 }
