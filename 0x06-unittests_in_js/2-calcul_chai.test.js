@@ -11,9 +11,9 @@ describe('round test with types for SUM', () => {
 
 describe('round test with types for SUBTRACT', () => {
   it('subtracts correctly when given SUBTRACT type', () => {
-    expect(calculateNumber('SUM', 0.5, 0.5)).to.equal(0);
-    expect(calculateNumber('SUM', 0.5, 3)).to.equal(-2);
-    expect(calculateNumber('SUM', 6, 2.4)).to.equal(4);
+    expect(calculateNumber('SUBTRACT', 0.5, 0.5)).to.equal(0);
+    expect(calculateNumber('SUBTRACT', 0.5, 3)).to.equal(-2);
+    expect(calculateNumber('SUBTRACT', 6, 2.4)).to.equal(4);
   });
 });
 
