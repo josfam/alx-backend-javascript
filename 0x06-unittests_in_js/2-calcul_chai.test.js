@@ -19,10 +19,15 @@ describe('round test with types for SUBTRACT', () => {
 
 describe('round test with types for DIVIDE', () => {
   it('divides correctly when given DIVIDE type', () => {
-    expect(calculateNumber('DIVIDE', 0.4, 0.4)).to.equal('Error');
     expect(calculateNumber('DIVIDE', 0, 0.5)).to.equal(0);
     expect(calculateNumber('DIVIDE', -4, 16)).to.equal(-0.25);
     expect(calculateNumber('DIVIDE', 0.5, 2)).to.equal(0.5);
     expect(calculateNumber('DIVIDE', 6, 2.4)).to.equal(3);
+  });
+
+  it('shows error when b is 0', () => {
+    expect(calculateNumber('DIVIDE', 4, 0.4)).to.equal('Error');
+    expect(calculateNumber('DIVIDE', 1, 0)).to.equal('Error');
+    expect(calculateNumber('DIVIDE', -1.5, 0.0)).to.equal('Error');
   });
 });
